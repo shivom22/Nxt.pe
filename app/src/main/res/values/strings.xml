@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Nextpay</string>
+    <string name="mandate_details">Mandate Details</string>
+</resources>
