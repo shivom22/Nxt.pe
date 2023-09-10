@@ -41,7 +41,7 @@ import kotlinx.coroutines.delay
 fun CountdownTimerDialog() {
     val mandatedetails: MandateViewModel = viewModel()
     val title: State<MandateDetails?> = mandatedetails.mandatedetails.collectAsState()
-    val initialSeconds = title.value?.status_check?.wait_time!!.toLong()
+    val initialSeconds = title.value?.status_check?.wait_time!!.toLong()/100
     val txt = title.value?.status_check?.approve_success_txt
     val txt2 = title.value?.status_check?.approve_request_txt
     var showIcon by remember { mutableStateOf(false) }
